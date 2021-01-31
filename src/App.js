@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import Wrapper from "./components/wrapper"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom" 
 import Nav from "./components/navbar"
 import About from "./pages/about"
 import Portfolio from "./pages/porforlio"
