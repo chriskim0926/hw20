@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import Wrapper from "./components/wrapper"
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import { HashRouter as Router, Route, Switch } from "react-router-dom" 
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { HashRouter  as Router, Route, Switch } from "react-router-dom";
+
 import Nav from "./components/navbar"
 import About from "./pages/about"
 import Portfolio from "./pages/porforlio"
@@ -11,7 +10,7 @@ import Contact from "./pages/contact"
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
     <Nav />
     <Wrapper>
       <Switch>
@@ -21,7 +20,7 @@ function App() {
         <Route exact path="/Contact" component={Contact} />
         </Switch>
     </Wrapper>
-  </BrowserRouter>
+  </Router>
   );
 }
 
